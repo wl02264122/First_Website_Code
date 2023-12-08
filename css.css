@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img.logo1 {
+    cursor: pointer;    /* 鼠標小手 */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 50%; /* 用於使圖像自動調整至父元素的寬度 */
+    height: auto; /* 讓高度根據寬度自動調整，保持比例 */
+    max-width: 10%; /* 可選：設置最大寬度為父元素的百分比 */
+    display: block; /* 将图像设置为块级元素 */
+    margin-left: auto; /* 让图像水平居中 */
+    margin-right: auto; /* 让图像水平居中 */
+}
+.title_name:hover{
+    color: #ce8460;
+}
+.title_name {
+    cursor: pointer;    /* 鼠標小手 */
+    font-size: 30px;    /*字形大小*/
+    text-align: center; /*置中*/
+    font-weight: bold;  /*粗體*/
+    letter-spacing: 2px; /*字間大小*/
+    margin-bottom: 10px;
+}
+.introduce {
+    text-align: center;
+    font-weight: bold;
+}
+li{
+    list-style: none;   /*去除li默認的點*/
+}
+.nav {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    border-bottom:1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.nav>ul{
+    display: flex;
+    justify-content: center;    /*文本置中*/
+    padding: 10px 0px 10px 0px;     /*上下填充*/
+    
+}
+.nav>ul>li{
+    position:relative;
+    margin: 0px 40px;   /*間隔*/
+}
+.nav ul li a{
+    font-size: 30px;
+    text-decoration: none;  /*去除li預設的下劃線*/
+}
+.nav ul li a:hover{
+    color: #ce8460;
+}
+.nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background-color: #ccc;
+    padding: 10px;
+    width: 120px;
+}
+.nav ul li li {
+    margin: 5px 0;
+}
+.nav>ul>li:hover ul{
+    display: block;
+}
+.banner{
+    width: 800px;
+    margin: auto;
+}
+.banner img{
+    width: 100%;
+}
+.about_title{
+    display: flex;
+    font-size: 24px;
+    color: #ce8460;
+    font-weight: bold;
+}
+.about_title::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 22px;
+    background-color: #ce8460;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.about{
+    font-weight: bold;
+    width: 800px;
+    margin: auto;
+}
+.about_text{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.8;   /*換行間隔*/ 
+    text-indent: 2em;   /*開頭縮進*/
+}
+.footer{
+    background-color:#ce8460;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
